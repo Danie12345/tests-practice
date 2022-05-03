@@ -14,4 +14,6 @@ function div(a, b) {
   return a / b;
 }
 
-module.exports = {add, sub, mul, div};
+module.exports = {
+  add, sub, mul, div,
+};
