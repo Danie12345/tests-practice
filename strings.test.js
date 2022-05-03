@@ -3,21 +3,32 @@ const calculator = require('./calculator');
 
 describe('Strings tests', () => {
   // Length tests
-  it('Length of 6', () => {
-    expect(stringFuncs.stringLength('daniel')).toBe(6);
-  });
-  
-  it('Length more than 0', () => {
-    expect(stringFuncs.stringLength('')).toBe('String has no characters!');
-  });
-  
-  it('Length less than 11', () => {
-    expect(stringFuncs.stringLength('daniesdcsdl')).toBe('String has more than 10 characters!');
+  describe('Length tests', () => {
+    it('Length of 6', () => {
+      expect(stringFuncs.stringLength('daniel')).toBe(6);
+    });
+    
+    it('Length more than 0', () => {
+      expect(stringFuncs.stringLength('')).toBe('String has no characters!');
+    });
+    
+    it('Length less than 11', () => {
+      expect(stringFuncs.stringLength('daniesdcsdl')).toBe('String has more than 10 characters!');
+    });
   });
   
   // Reverse tests
-  it('Reverses string', () => {
-    expect(stringFuncs.reverseString('daniel')).toBe('leinad');
+  describe('Reverse tests', () => {
+    it('Reverses string', () => {
+      expect(stringFuncs.reverseString('daniel')).toBe('leinad');
+    });
+  });
+
+  // Capitalize test
+  describe('Capitalize tests', () => {
+    it('Capitalizes the first letter', () => {
+      expect(stringFuncs.capitalize('daniel')).toBe('Daniel');
+    });
   });
 });
 

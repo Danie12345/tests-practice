@@ -8,4 +8,8 @@ function reverseString(str) {
   return str.split('').reverse().join('');
 }
 
-module.exports = {stringLength, reverseString};
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.toLowerCase().slice(1);
+}
+
+module.exports = {stringLength, reverseString, capitalize};
